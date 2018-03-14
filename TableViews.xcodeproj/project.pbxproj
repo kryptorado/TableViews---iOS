@@ -13,6 +13,7 @@
 		F001DF272059781700B5E5C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F001DF262059781700B5E5C8 /* Assets.xcassets */; };
 		F001DF2A2059781700B5E5C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F001DF282059781700B5E5C8 /* LaunchScreen.storyboard */; };
 		F001DF3220597C0600B5E5C8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001DF3120597C0600B5E5C8 /* TableViewController.swift */; };
+		F001DF342059B19400B5E5C8 /* atmosphereLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001DF332059B19400B5E5C8 /* atmosphereLayers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F001DF292059781700B5E5C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F001DF2B2059781700B5E5C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F001DF3120597C0600B5E5C8 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F001DF332059B19400B5E5C8 /* atmosphereLayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = atmosphereLayers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				F001DF1F2059781700B5E5C8 /* AppDelegate.swift */,
 				F001DF212059781700B5E5C8 /* ViewController.swift */,
+				F001DF332059B19400B5E5C8 /* atmosphereLayers.swift */,
 				F001DF232059781700B5E5C8 /* Main.storyboard */,
 				F001DF262059781700B5E5C8 /* Assets.xcassets */,
 				F001DF282059781700B5E5C8 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F001DF222059781700B5E5C8 /* ViewController.swift in Sources */,
+				F001DF342059B19400B5E5C8 /* atmosphereLayers.swift in Sources */,
 				F001DF3220597C0600B5E5C8 /* TableViewController.swift in Sources */,
 				F001DF202059781700B5E5C8 /* AppDelegate.swift in Sources */,
 			);

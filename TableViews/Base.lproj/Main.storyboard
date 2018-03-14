@@ -6,9 +6,45 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="P1a-tm-Wgb">
+            <objects>
+                <viewController id="rl9-cC-TgE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mse-NH-nQt"/>
+                        <viewControllerLayoutGuide type="bottom" id="cwl-48-RkQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eCO-Oq-nCs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nRR-A5-v7l">
+                                <rect key="frame" x="43" y="72" width="288" height="35"/>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pivotal" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zto-1c-uat">
+                                <rect key="frame" x="0.0" y="139" width="320" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nRR-A5-v7l" firstAttribute="leading" secondItem="eCO-Oq-nCs" secondAttribute="leadingMargin" id="jV6-1n-SoN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nRR-A5-v7l" secondAttribute="trailing" id="jcG-kv-3zm"/>
+                            <constraint firstItem="nRR-A5-v7l" firstAttribute="top" secondItem="mse-NH-nQt" secondAttribute="bottom" constant="20" id="x9l-bo-V08"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2OI-KG-Mzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485" y="1062.6760563380283"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -36,6 +72,14 @@
                                     <constraint firstAttribute="height" constant="30" id="0u8-VC-Acp"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VM4-Th-0Yy">
+                                <rect key="frame" x="136" y="222" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Other"/>
+                                <connections>
+                                    <segue destination="rl9-cC-TgE" kind="show" id="sEx-KF-kvs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
