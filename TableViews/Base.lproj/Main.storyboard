@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="KcE-Xu-Nh0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eCO-Oq-nCs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nRR-A5-v7l">
@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2OI-KG-Mzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="223" y="1200"/>
+            <point key="canvasLocation" x="470" y="1207"/>
         </scene>
         <!--Status-->
         <scene sceneID="tne-QT-ifu">
@@ -54,11 +54,11 @@
                         <viewControllerLayoutGuide type="bottom" id="1KZ-2J-rDz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kUR-Rq-MPE">
-                                <rect key="frame" x="-140" y="64" width="164" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="140" height="504"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY7-8B-5E0">
                                         <rect key="frame" x="8" y="8" width="148" height="40"/>
@@ -78,41 +78,48 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Czc-hY-L36"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="jsU-UY-8sc"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="kUR-Rq-MPE" firstAttribute="top" secondItem="QIA-rA-21b" secondAttribute="bottom" id="bst-PY-UJk"/>
-                            <constraint firstItem="kUR-Rq-MPE" firstAttribute="bottom" secondItem="1KZ-2J-rDz" secondAttribute="top" id="i5x-Vy-3UA"/>
-                            <constraint firstItem="kUR-Rq-MPE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="l6D-xW-Gg2"/>
-                            <constraint firstAttribute="trailing" secondItem="kUR-Rq-MPE" secondAttribute="trailing" constant="211" id="zf9-zE-RGx"/>
+                            <constraint firstItem="1KZ-2J-rDz" firstAttribute="top" secondItem="kUR-Rq-MPE" secondAttribute="bottom" id="LIA-nL-xHW"/>
+                            <constraint firstItem="kUR-Rq-MPE" firstAttribute="top" secondItem="QIA-rA-21b" secondAttribute="bottom" id="nP2-QR-dGb"/>
+                            <constraint firstItem="kUR-Rq-MPE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-140" id="rCN-bs-uME"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Status" id="H3t-Fh-aPP">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="organize" id="e7k-eV-L15"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="organize" id="e7k-eV-L15">
+                            <connections>
+                                <action selector="showMenu:" destination="BYZ-38-t0r" id="D2D-Cz-RfO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leadingSpace" destination="l6D-xW-Gg2" id="MLw-2o-KEK"/>
+                        <outlet property="leadingSpace" destination="rCN-bs-uME" id="a2V-bA-6RM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="608.5" y="305.5"/>
+            <point key="canvasLocation" x="608" y="305"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="1aj-mv-jgb">
             <objects>
                 <tableViewController id="mlu-kC-O3e" customClass="TableViewController" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z3z-hL-wTy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="8hh-1i-HYz">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8hh-1i-HYz" id="b4Z-rE-erj">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -150,6 +157,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
     </simulatedMetricsContainer>
 </document>

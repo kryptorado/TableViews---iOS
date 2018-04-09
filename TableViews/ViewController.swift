@@ -10,19 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+
     @IBOutlet weak var leadingSpace: NSLayoutConstraint!
+    
+    var menuShowing = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func clickSideMenu(_ sender: Any) {
+    @IBAction func showMenu(_ sender: Any) {
+        if(menuShowing){
+            leadingSpace.constant = -140
+        }
+        else{
+            leadingSpace.constant = 0
+            
+            UIView.animate(withDuration: 0.3, animations:{
+                self.view.layoutIfNeeded()
+            })
+        }
         
-        leadingSpace.constant = 0
-        
+        menuShowing = !menuShowing
+        //Makes it always equal to its opposite
     }
+
     
     
 }
