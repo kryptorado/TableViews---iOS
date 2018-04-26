@@ -22,7 +22,11 @@ class ViewController: UIViewController {
 
     @IBAction func showMenu(_ sender: Any) {
         if(menuShowing){
+            
             leadingSpace.constant = -140
+            UIView.animate(withDuration: 0.3, animations:{
+                self.view.layoutIfNeeded()
+            })
         }
         else{
             leadingSpace.constant = 0
